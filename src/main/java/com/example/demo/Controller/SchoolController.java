@@ -17,4 +17,9 @@ public class SchoolController {
     public List<School> selectSchool(){
         return schoolService.selectAllSchool();
     }
+
+    @GetMapping("/getName")
+    public String getName(String id){
+        return "张三";
+    }
 }
